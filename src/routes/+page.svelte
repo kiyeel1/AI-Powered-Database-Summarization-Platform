@@ -588,7 +588,7 @@
 	</div>
 	
 	<!-- AI Chatbot Button -->
-	<button>
+	<button
 	  on:click={toggleChat}
 	  style="position: fixed; bottom: 2rem; right: 7rem; width: 3.5rem; height: 3.5rem; border-radius: 50%; background-color: #0d9488; color: white; border: none; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 50;"
 	>
@@ -601,7 +601,7 @@
 	</button>
 	
 	<!-- Generate Summary Button -->
-	<button>
+	<button 
 	  on:click={showSummaryInterface}
 	  style="position: fixed; bottom: 2rem; right: 2rem; width: 3.5rem; height: 3.5rem; border-radius: 50%; background-color: #0d9488; color: white; border: none; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 50;"
 	  disabled={users.length === 0}
@@ -619,7 +619,7 @@
 		<!-- Chat Header -->
 		<div style="padding: 1rem; background-color: #0d9488; color: white; display: flex; justify-content: space-between; align-items: center;">
 		  <div style="font-weight: 500;">AI Assistant</div>
-		  <button>
+		  <button 
 			on:click={toggleChat}
 			style="background: none; border: none; color: white; cursor: pointer;"
 		  >
@@ -656,7 +656,7 @@
 			  placeholder="Type your message..." 
 			  style="flex: 1; padding: 0.5rem 0.75rem; border: 1px solid #d1d5db; border-radius: 0.375rem; font-size: 0.875rem; outline: none;"
 			/>
-			<button>
+			<button 
 			  on:click={sendMessage}
 			  style="background-color: #0d9488; color: white; border: none; padding: 0.5rem; border-radius: 0.375rem; cursor: pointer;"
 			>
